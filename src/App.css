@@ -36,3 +36,29 @@
     transform: rotate(360deg);
   }
 }
+/* styles.css or global styles */
+.scroll-container {
+  display: flex;
+  overflow-x: auto; /* Enable horizontal scrolling */
+  padding: 10px; /* Optional padding */
+  white-space: nowrap; /* Prevent wrapping of items */
+  scrollbar-width: none; /* Firefox */
+}
+
+.scroll-container::-webkit-scrollbar {
+  display: none; /* Chrome, Safari and Opera */
+}
+
+.scroll-item {
+  min-width: 300px; /* Minimum width for each item */
+  margin-right: 10px; /* Space between items */
+  flex: 0 0 auto; /* Prevent flex items from shrinking */
+}
+
+
+@media (max-width: 600px) {
+  .scroll-item {
+    min-width: 200px; /* Smaller width on mobile */
+  }
+}
+

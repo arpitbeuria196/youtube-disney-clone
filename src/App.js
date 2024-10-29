@@ -5,6 +5,7 @@ import Login from './components/Login';
 import { Provider } from 'react-redux';
 import store from './utils/appStore';
 import Home from './components/Home';
+import Detail from './components/Detail';
 
 function App() {
   const router = createBrowserRouter([
@@ -15,7 +16,11 @@ function App() {
       {
         path:"/home",
         element:<Home/>
-      }
+      },
+      {
+        path:"/movie/:id",
+        element:<Detail/>
+      },
   ]);
 
   return (

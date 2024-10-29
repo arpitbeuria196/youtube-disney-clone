@@ -35,5 +35,12 @@ a {
     font-size: 14px
   }
 }
+.text-light-gray {
+  color: rgba(255, 255, 255, 0.6); /* Light gray with transparency */
+}
+
+.border-light-gray {
+  border-color: rgba(255, 255, 255, 0.6); /* Light gray border with transparency */
+}
 
 
